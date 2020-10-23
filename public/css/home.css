@@ -1,0 +1,81 @@
+
+.post-container {
+    
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.post {
+    padding: 2rem;
+    background-color: var(--post-bg);
+    box-shadow: 0 1px 5px #00000075;
+    color: var(--post-head);
+    display: inline-block;
+    height: 10rem;
+    width: 15rem;
+    margin: 2rem;
+    white-space: pre-line;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.post-title {
+    font-size: 2rem;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    
+}
+
+
+.post:hover {
+    opacity: 75%;
+}
+
+a,
+a:link,
+a:visited,
+a:hover,
+a:active{
+    text-decoration: none;
+}
+
+.post-description {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+
+
+
+
+
+
+
+/* // Large devices (desktops, less than 1200px) */
+@media (max-width: 1199.98px) {
+    
+
+    
+}
+
+/* // Medium devices (tablets, less than 992px) */
+@media (max-width: 991.98px) {
+    
+
+    
+}
+
+/* // Small devices (landscape phones, less than 768px) */
+@media (max-width: 767.98px) {
+    
+
+
+}
+
+@media (max-width: 35.99875rem) { 
+    
+    .post {
+        margin: 2rem 10vw;
+        width: 80vw;
+        height: 30vh;
+    }
+    
+}

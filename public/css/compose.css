@@ -1,0 +1,50 @@
+:root {
+    --input-bg: #eff4ff;
+}
+
+body {
+    background-color: #ffffff;
+    color: #454545;
+}
+/* * {
+     color: #454545;
+} */
+
+.form input, .form textarea {
+    padding: 0.6rem;
+    margin: 1rem 2rem;
+    border: solid 1px;
+    border-radius: 5px;
+    display: inline-block;
+    width: 50%;
+    font-size: 1.2rem;
+}
+.form input {
+    background-color: var(--input-bg);
+    height: 2rem;
+    display: block;
+}
+
+#edit {
+    width: 50%;
+}
+
+.submit-btn {
+    padding: 0.75rem 1rem;
+    margin: auto 2rem;
+    border-radius: 10% / 25%;
+    border: solid 1px;
+    font-size: 1.2rem;
+    display: block;
+    background-color: var(--main);
+    color: white;
+    transition: all 0.5s ease-in-out;
+}
+
+
+
+form button[type=submit]:hover {
+    cursor: pointer;
+    background-color: #ffffff00;
+    color: var(--main);
+}

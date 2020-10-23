@@ -1,0 +1,109 @@
+.navbar-container {
+    background-color: var(--navbar-bg);
+}
+.navbar {
+    background-color: #0001;
+    display: block;
+    padding: 0.7rem;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+}
+
+.nav-brand, .nav-item {
+    display: inline-block;
+    color: var(--main);
+}
+.nav-brand {
+    font-size: 2rem;
+    margin: 0.5rem 1rem;
+    font-weight: bold;
+}
+
+.nav-brand:hover h1, .nav-brand:hover p {
+    background: -webkit-linear-gradient(45deg,
+        var(--main),
+        var(--main-green)
+    );
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.nav-brand-container h1 {
+    font-size: 1.8rem;
+    transition: all 1s ease;
+}
+
+.nav-brand-container p {
+    font-size: 0.8rem;
+    transition: all 1s ease-in-out;
+}
+
+.nav-btn {
+    text-align: center;
+    padding: 0.5rem 0.68rem;
+    border-radius: 50%;
+    transition: all 0.75s ease;
+    margin-right: 1rem;
+    border: none;
+}
+.nav-btn-gradient {
+    color: white;
+    background: linear-gradient(45deg,
+        var(--main),
+        var(--main-green)
+    );
+}
+
+.nav-btn-lg {
+    border-radius: 10px;
+    color: white;
+}
+
+.nav-btn-gray {
+    color: white;
+    background-color: #454545;
+}
+
+#nav-user {
+    margin-left: 2rem;
+}
+
+.nav-input {
+    margin-right: 1.1rem;
+    font-size: 1.2rem;
+    border-radius: 10px;
+    border: solid 0.2px gray;
+    padding: 0.5rem 0.8rem;
+    color: #333;
+    width: 17.5rem;
+}
+
+.nav-input:focus {
+    outline: none;
+    outline: none 1px;
+}
+
+.nav-btn:hover {
+    transform: scale(1.1);
+    -webkit-box-shadow: 1px 3px 4px 0px rgba(0,0,0,0.2);
+    -moz-box-shadow: 1px 3px 4px 0px rgba(0,0,0,0.2);
+    box-shadow: 1px 3px 4px 0px rgba(0,0,0,0.2);
+    cursor: pointer;
+
+}
+
+.left-nav {
+    display: flex;
+}
+
+.right-nav {
+    display: flex;
+    margin-left: auto;
+}
+
+.nav-item {
+    font-size: 1.35rem;
+}
+

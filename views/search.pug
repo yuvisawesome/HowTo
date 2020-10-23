@@ -1,0 +1,17 @@
+doctype html
+html
+    head
+        link(rel="stylesheet", href="../../css/styles.css")
+        link(rel="stylesheet", href="../../css/search.css")
+    body
+        include includes/navbar
+    
+        .results-head
+            h3(class="result-query") #{searchQuery}
+    
+        .results-container
+            each post in results
+                a(href="/posts/" + post.id)
+                    .result-post
+                        h3(class="result-title") #{post.title}
+                        p(class="result-description") #{post.description}

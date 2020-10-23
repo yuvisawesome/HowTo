@@ -1,0 +1,32 @@
+doctype html
+html
+    head
+        title HowTo
+        link(rel="stylesheet", href="https://cdn.jsdelivr.net/npm/froala-editor@3.1.0/css/froala_editor.pkgd.min.css")
+        link(rel="stylesheet", href="../../css/styles.css")
+        link(rel="stylesheet", href="../../css/compose.css")
+    body
+        include includes/navbar.pug
+        .header
+            h1(styles="heading") Compose Post
+
+        form(action="/compose", method="post" class="form")
+            input(name="title", autocomplete="off" placeholder="Title", maxlength = "48" required)
+            //- Id = #edit
+            input(autocomplete="off" name="description" placeholder="Description" maxlength = "136", required)
+
+            textarea(name="content", id="", placeholder="Type your tutorial here" cols=50, rows=10 required)
+            
+            //- input(type="file", name="file")
+            button(type="submit" class="submit-btn") Submit
+
+        script(type="text/javascript" src="https://cdn.jsdelivr.net/npm/froala-editor@3.1.0/js/froala_editor.pkgd.min.js")
+
+        script.
+            new FroalaEditor('#edit', {
+                imageUploadURL: 'image_upload',
+                    imageUploadParams: {
+                        id: 'my_editor'
+                    }
+            })
+        

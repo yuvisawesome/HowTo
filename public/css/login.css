@@ -1,0 +1,54 @@
+body {
+    text-align: center;
+    
+}
+
+.login-head {
+    font-size: 3rem;
+    margin: 3rem auto;
+}
+
+.login-input {
+    font-size: 1rem;
+    padding: 1rem;
+    display: block;
+    color: #454545;
+    margin: 1rem auto;
+    border-radius: 10px;
+    border: solid 0.5px #454545;
+    width: 15rem;
+}
+
+.login-btn {
+    margin-top: 1rem;
+    font-size: 1.5rem;
+    padding: 0.6rem 3rem;
+    border: 1px solid var(--main);
+    background-color: var(--main);
+    color: white;
+    border-radius: 10px;
+    transition: all 1s ease;
+}
+.login-btn:hover {
+    color: var(--main);
+    background-color: white;
+    cursor: pointer;
+}
+.login-anchor {
+    margin: 1rem auto;
+    
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+

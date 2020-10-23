@@ -1,0 +1,30 @@
+link(rel="stylesheet", href="/css/navbar.css")
+script(src="https://kit.fontawesome.com/50fbdb32fd.js" crossorigin="anonymous")
+
+.navbar-container
+    ul(class="navbar")
+        .left-nav
+            a(href="/")
+                li(class="nav-brand hover-gradient")
+                    .nav-brand-container 
+                        h1 HowTo
+                        p Find Tutorials
+        .right-nav 
+            form(action="/search", method="post")
+                    input(type="text" name = "query" class="nav-input" placeholder = "Search..." required)
+                    button(type="submit" class="nav-item nav-btn nav-btn-gradient")
+                        i(class="fas fa-search")
+            a(href="/compose")
+                li(class="nav-item nav-btn nav-btn-gradient")
+                    i(class="fas fa-plus")
+            a(href="/login")
+                li(class="nav-item nav-btn nav-btn-gradient nav-btn-lg")
+                    p Log In
+            a(href="")
+                li(id="nav-user" class="nav-item nav-btn nav-btn-gray")
+                    i(class="fas fa-user")
+
+            
+        
+                 
+        

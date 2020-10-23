@@ -1,0 +1,45 @@
+:root {
+    --main-bg: #fafdff;
+    /* --main: #ff4757; */
+    --main: #00a2ff;
+    --main-light: #00ffd599;
+    --post-bg: #fafafa;
+    --post-head: #454545;
+    --main-green: #00ffd9;
+}
+
+* {
+    /* box-sizing: border-box; */
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+
+body {
+    background-color: var(--main-bg)
+}
+
+.header {
+    padding: 2rem;
+    color: var(--main);
+}
+
+.head-phrase {
+    font-size: 2rem;
+}
+
+.heading {
+    font-size: 5rem;
+}
+
+.hover-gradient:hover {
+    background: -webkit-linear-gradient(45deg,
+        var(--main),
+        var(--main-green)
+    );
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+

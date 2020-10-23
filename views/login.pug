@@ -1,0 +1,17 @@
+doctype html
+html
+    head
+        link(rel="stylesheet", href="css/styles.css")
+        link(rel="stylesheet", href="css/login.css")
+        title How To | Log In
+    body
+        include includes/navbar.pug
+        h1(class="login-head") Sign Up
+
+        form(action="/login", method="post")
+            input(type="text" class="login-input" placeholder="Username" name="username" required)
+            input(type="email", class="login-input", placeholder="Email ID", name="email" required)
+            input(type="password", class="login-input", placeholder="Password", name="password" required)
+            button(type="submit", class="login-btn") Sign Up!
+        
+        //- button(class="login-anchor") Already have an account? Log in.

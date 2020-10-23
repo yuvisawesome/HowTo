@@ -1,0 +1,36 @@
+doctype html
+html
+    head
+        meta(charset="utf-8")
+        title HowTo
+        link(rel="stylesheet", href="../../css/styles.css")
+        link(rel="stylesheet", href="../../css/home.css")
+    body
+        include includes/navbar.pug
+
+        //- .header
+            h1(class="heading") HowTo
+            h2(class="head-phrase") Find Tutorials
+        
+        .post-container
+
+            each post in postsArray
+                a(href = "/posts/" + post.id)
+                    .post
+                        //- button(class="more-options" id = post.id) ...
+                        h4(class="post-title") #{post.title}
+                        p(class="post-description") #{post.description}
+
+            //- a(href = "/posts/" + "abcd")
+            //-     .post
+            //-         //- button(class="more-options" id = "abcd") ...
+            //-         h4(class="post-title") This is the How To Title
+            //-         p(class="post-description") This is the How To (or HT) description
+
+        script(src="../../js/home.js")
+        
+
+
+
+
+        

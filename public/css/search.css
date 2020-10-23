@@ -1,0 +1,60 @@
+* {
+    text-decoration: none;
+}
+
+.result-query {
+    padding: 2rem;
+    color: #222;
+    font-size: 1.9rem;
+}
+
+
+.result-query::before {
+    content: "Showing results for: ";
+    color: #454545;
+    font-size: 1.75rem;
+}
+
+.results-container {
+    
+    display: flex;
+    flex-direction: column;
+
+}
+
+.result-post {
+    padding: 3rem 2rem;
+    box-shadow: 1px 1px 3px #8888;
+    margin: 1rem 2rem;
+    color: #454545;
+    text-decoration: none;
+    transition: all 0.5s ease-in-out;
+}
+
+.result-post:hover {
+    opacity: 80%;
+    transform: scale(1.01);
+}
+
+.result-title {
+    font-family: serif;
+    font-size: 1.75rem;
+    text-decoration: none;
+}
+.result-description {
+    font-size: 1.25rem;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
